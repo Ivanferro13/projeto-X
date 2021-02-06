@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ASTROX</title>
+	<meta name="viewport" content="width=device-width, inical-scale=1">
+	<link rel="stylesheet" type="text/css" href="./css/style.css"/>
+	<link rel="icon" href="ff.ico" type="image/xicon"/> 
+</head>
+
+<body>
+<!--Menu start-->
+<div id="menu1">		
+	<nav id="menu">
+		<ul type="disc">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Categoria</a></li>
+			<li><a href="#">Sobre-Nos</a></li>
+		</ul>
+	</nav>
+	</div>
+</div>
+<!--Menu end-->
+
+<!--logo start-->
+
+
+<a href="#"><img  id="logo" src="./img/logo/125x125.png"/></a>
+<!--logo end-->
+
+
+<!--logo user end-->
+
+<section id="pesk">
+	<!--user-logo start-->
+<!--pesk-logo start-->
+<input id="pesk" type="text" name="pesk" placeholder="Pesquisar"/>
+<img  id="peskicon" src="./img/logo/Lupa-36x36.png">
+<a href="#"><img id="user-logo1" src="./img/logo/Icon-User-36X36.png"/></a>
+	<label class="nome-user">Ferro</label>
+<!--logo pesk end-->
+<!--logo user end-->
+
+</section>
+
+<!--galeria start -->
+<!--<a href="#"><img  id="galeria" src="./img/logo_w.png"/></a>-->
+<!--galeria end-->
+
+
+
+
+<!--Mobile -->
+
+
+<label for="checkbox"  onclick="yy()">
+<div id="nerd" class="container" >
+	
+	<div class="bar1"></div>
+	<div class="bar2"></div>
+	<div class="bar3"></div>
+
+  </div>
+</label>
+
+
+
+  
+  <!--Menu end-->
+
+
+	<!--Menu end-->
+<!--rodape-->
+<div id="rodape">
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<label  class="mennu" onclick="my()">Me click</label>
+	<div id="mydiv">Hello</div>
+
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<script>
+		function my(){
+			var x = document.getElementById("mydiv");
+			if (x.innerHTML === "Hello" ){
+				x.innerHTML = "swapped text";
+			} else {
+				x.innerHTML = "Hello";
+				x.stile.logo.display = "flex";
+			}
+		}
+	</script>
+
+
+<label  class="mennu" onclick="yy()">Logo hide 1</label>
+<div id="mydiv1">Hello</div>
+
+
+
+<script>
+		function yy(){
+			var x = document.getElementById("nerd") ;
+
+			if(document.getElementById("menu").style.display === "flex" ){
+				document.getElementById("menu").style.display = "none";
+				x.classList.toggle("change");
+				
+				}		
+			 else {
+				document.getElementById("menu").style.display = "flex";
+				x.classList.toggle("change");
+			}
+			
+		}
+	</script>
+
+
+
+<script>
+	function me(){
+		var x = document.getElementById("mydiv");
+		if (x.innerHTML === "Hello" ){
+			x.innerHTML = "swapped text";
+			
+			
+		} else {
+			x.innerHTML = "Hello";
+			x.stile.logo.display = "flex";
+		}
+	}
+</script>
+	<!--
+	<div class="dropdown">
+	<button id="mybtn" class="dropbtn" >dropown</button>
+	<div id="mydropdown" class="dropdown-content">
+
+		<a href="#home">home</a>
+		<a href="#home">about</a>
+		<a href="#home">contact</a>
+
+	</div>
+	</div>
+	<script>
+		document.getElementById(mybtn).onclick = function() {myFunction()};
+
+		function myFunction() {
+			document.getElementById("mydropdown").classList.toggle("show");
+		}
+	</script>
+	-->
+
+
+
+	<input type="checkbox" id="checkbox" >
+</div>
+
+
+</script>
+</body>
+</html>
